@@ -100,10 +100,10 @@ print(res)
 """
 
 ip = '192.168.3.1'
-width = 10
+width = 8
 oct1, oct2, oct3, oct4 = ip.split('.')
 print(type)
 print(f'''
      IP address:
      {oct1:{width}} {oct2:{width}} {oct3:{width}} {oct4:{width}}
-     {int(oct1):>08b} {int(oct2):>08b} {int(oct3):>08b} {int(oct4):>08b}''')
+     {int(oct1):>0{width}b} {int(oct2):>0{width}b} {int(oct3):>0{width}b} {int(oct4):>0{width}b}''')
