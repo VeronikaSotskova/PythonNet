@@ -5,6 +5,7 @@
  И вывести информацию о соответствующем устройстве на стандартный поток вывода (информация будет в виде словаря).
 """
 device = input('Введите имя устройства:')
+param = input('Введите имя параметра:')
 london_co = {
     'r1': {
         'location': '21 New Globe Walk',
@@ -30,4 +31,4 @@ london_co = {
         'routing': True
     }
 }
-print(london_co[device])
+print(london_co[device][param])
