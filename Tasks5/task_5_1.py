@@ -4,8 +4,6 @@
 Необходимо запросить у пользователя ввод имени устройства (r1, r2 или sw1).
  И вывести информацию о соответствующем устройстве на стандартный поток вывода (информация будет в виде словаря).
 """
-device = input('Введите имя устройства:')
-param = input('Введите имя параметра:')
 london_co = {
     'r1': {
         'location': '21 New Globe Walk',
@@ -31,4 +29,9 @@ london_co = {
         'routing': True
     }
 }
+
+device = input('Введите имя устройства: ')
+args_dev = tuple(london_co['r1'].keys())
+param = input(f'Введите имя параметра {args_dev}: ')
+
 print(london_co[device][param])
