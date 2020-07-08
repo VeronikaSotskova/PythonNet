@@ -34,6 +34,6 @@ device = input('Введите имя устройства: ')
 args_dev = tuple(london_co[device].keys())
 param = input(f'Введите имя параметра {args_dev}: ')
 try:
-    print(london_co[device][param])
+    print(london_co[device][param.lower()])
 except KeyError:
     print('Такого параметра нет')
