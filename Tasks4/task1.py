@@ -102,7 +102,6 @@ print(res)
 ip = '192.168.3.1'
 width = 8
 oct1, oct2, oct3, oct4 = ip.split('.')
-print(type)
 print(f'''
      IP address:
      {oct1:{width}} {oct2:{width}} {oct3:{width}} {oct4:{width}}
