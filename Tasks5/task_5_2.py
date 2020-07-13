@@ -21,6 +21,21 @@ print(f'''
      {int(ip_oct1):>0{width}b} {int(ip_oct2):>0{width}b} {int(ip_oct3):>0{width}b} {int(ip_oct4):>0{width}b}
 
      Mask:
-     {int(bin_mask[0:8],2):<{width}} {int(bin_mask[8:16],2):<{width}} {int(bin_mask[16:24],2):<{width}} {int(bin_mask[24:32],2):<{width}}
+     {int(bin_mask[0:8], 2):<{width}} {int(bin_mask[8:16], 2):<{width}} {int(bin_mask[16:24], 2):<{width}} {int(bin_mask[24:32], 2):<{width}}
      {bin_mask[0:8]:>0{width}} {bin_mask[8:16]:>0{width}} {bin_mask[16:24]:>0{width}} {bin_mask[24:32]:>0{width}}
      ''')
+
+
+def check_if_host(ip, mask):
+    oct1, oct2, oct3, oct4 = ip.split('.')
+    return
+
+
+def mask_bit_to_dec(mask):
+    whole_part_mask = mask / 8
+    remains = mask % 8
+    if whole_part_mask == 0:
+        return int(remains*'1', 2), 0, 0, 0
+    else:
+
+        return
